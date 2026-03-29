@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Pulls the code from your GitHub
-                git branch: 'main', url: 'https://github.com/Advait1112/VehicleRegistrationSystem.git'
+                git branch: 'main', url: 'https://github.com/rattttle22/VehicleRegistrationSystem.git'
             }
         }
         
