@@ -9,12 +9,12 @@ public class Main {
         System.out.println("Initializing Vehicle Registration System...\n");
 
         LoginSignUp auth = new LoginSignUp();
-        auth.signUp("Advait Bhore", "advait@test.com", "secure123");
-        auth.login("advait@test.com", "secure123");
+        auth.signUp("Saurav Ansuman", "saurav@test.com", "secure123");
+        auth.login("saurav@test.com", "secure123");
         
         System.out.println("\n--- Processing Registration ---");
         VehicleRegistration reg = new VehicleRegistration();
-        reg.registerVehicle("MH-15-AB-1234", "Advait Bhore");
+        reg.registerVehicle("MH-15-AB-1234", "Saurav Ansuman");
         reg.getDetailsAndVerifyDetails();
 
         System.out.println("\n--- Processing Permit ---");
@@ -30,12 +30,12 @@ public class Main {
         System.out.println("\n--- Processing Licensing ---");
         VehicleLicensing license = new VehicleLicensing();
         license.age = 24;
-        license.nameAddress = "Advait Bhore, Vellore";
+        license.nameAddress = "Saurav Ansuman, Vellore";
         license.provideLicenseToDrive();
 
         System.out.println("\n--- Processing Examination ---");
         Examination exam = new Examination();
-        exam.name = "Advait Bhore";
+        exam.name = "Saurav Ansuman";
         exam.figureOutEligibleCandidates(88);
         
         System.out.println("\nSystem execution completed successfully.");
